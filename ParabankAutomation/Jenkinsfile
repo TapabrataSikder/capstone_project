@@ -3,7 +3,7 @@ pipeline {
     
     tools {
         // Ensure these names match what you set in Manage Jenkins > Tools
-        maven 'maven' 
+        maven 'maven3' 
         jdk 'java' 
     }
     
