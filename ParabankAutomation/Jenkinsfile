@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+    
+    tools {
+        // Ensure these names match what you set in Manage Jenkins > Tools
+        maven 'Maven' 
+        jdk 'Java17' 
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                // Jenkins automatically checks out the code from the repo configured in the Job
+                echo 'Checking out code from GitHub...'
+            }
+        }
+        
+        stage('Build & Test') {
+            steps {
+                // Navigate into the subdirectory where pom.xml is located
+                dir('ParabankAutomation') {
+                    // This runs your tests using the Maven installed on your local machine
+                    bat 'mvn clean test'
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            // Optional: Publish test results if you have JUnit/TestNG plugin installed
+            archiveArtifacts artifacts: 'ParabankAutomation/target/surefire-reports/*.xml', fingerprint: true
+        }
+    }
+}
