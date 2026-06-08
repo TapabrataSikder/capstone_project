@@ -20,7 +20,7 @@ pipeline {
                 // Navigate into the subdirectory where pom.xml is located
                 dir('ParabankAutomation') {
                     // This runs your tests using the Maven installed on your local machine
-                    bat 'mvn clean test'
+                    bat 'mvn clean test -Dsurefire.suiteXmlFiles=testng.xml'
                 }
             }
         }
