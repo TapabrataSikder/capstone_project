@@ -1,22 +1,29 @@
 pipeline {
     agent any
+    tools {
+        // Ensure these names match what you set in Manage Jenkins > Tools
+        maven 'maven3' 
+        jdk 'java' 
+    }
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                echo 'Checking out code from GitHub...'
             }
         }
         stage('Build & Test') {
             steps {
-                // This command runs your testng.xml via Maven
-                bat 'mvn clean test' 
+                    // Navigate into the subdirectory where pom.xml is located
+                    dir('capstone_project') {
+						bat 'mvn clean test' 
             }
         }
     }
+ }
     post {
         always {
             // Archive the test reports so you can view them in Jenkins
-            archiveArtifacts artifacts: 'target/surefire-reports/**/*', fingerprint: true
+            archiveArtifacts artifacts: 'capstone_project/target/surefire-reports/**/*', fingerprint: true
         }
     }
 }
