@@ -8,13 +8,16 @@ public class ExcelReader {
         FileInputStream fis = new FileInputStream(filePath);
         Workbook wb = WorkbookFactory.create(fis);
         Sheet sheet = wb.getSheet(sheetName);
+        
         int rows = sheet.getLastRowNum();
         int cols = sheet.getRow(0).getLastCellNum();
         Object[][] data = new Object[rows][cols];
 
         for (int i = 0; i < rows; i++) {
+            Row row = sheet.getRow(i + 1);
             for (int j = 0; j < cols; j++) {
-                data[i][j] = sheet.getRow(i + 1).getCell(j).toString();
+                Cell cell = row.getCell(j);
+                	data[i][j] = (cell == null) ? "" : cell.toString();
             }
         }
         wb.close();
