@@ -3,12 +3,13 @@
 <suite name="Failed suite [ParaBank Suite]">
   <test thread-count="5" name="Regression Tests(failed)">
     <classes>
-      <class name="testcases.OpenAccountTest">
+      <class name="testcases.RegistrationTest">
         <methods>
           <include name="setup"/>
-          <include name="testOpenNewAccount"/>
+          <include name="tearDown"/>
+          <include name="testRegistration" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testcases.OpenAccountTest -->
+      </class> <!-- testcases.RegistrationTest -->
     </classes>
   </test> <!-- Regression Tests(failed) -->
 </suite> <!-- Failed suite [ParaBank Suite] -->
