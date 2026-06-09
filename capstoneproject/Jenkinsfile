@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Build & Test') {
+            steps {
+                // This command runs your testng.xml via Maven
+                bat 'mvn clean test' 
+            }
+        }
+    }
+    post {
+        always {
+            // Archive the test reports so you can view them in Jenkins
+            archiveArtifacts artifacts: 'target/surefire-reports/**/*', fingerprint: true
+        }
+    }
+}

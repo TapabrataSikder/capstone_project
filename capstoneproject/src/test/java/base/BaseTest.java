@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.time.Duration;
 
-public class BaseClass {
+public class BaseTest {
     public static WebDriver driver;
 
     public void initializeDriver() {

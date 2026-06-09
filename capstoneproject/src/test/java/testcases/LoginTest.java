@@ -2,11 +2,11 @@ package testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
-import base.BaseClass;
+import base.BaseTest;
 import pages.LoginPage;
 import utils.ExcelReader;
 
-public class LoginTest extends BaseClass {
+public class LoginTest extends BaseTest {
 	
 	@DataProvider(name = "validUsers")
 	public Object[][] getValidData() throws Exception {
