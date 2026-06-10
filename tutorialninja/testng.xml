@@ -1,0 +1,9 @@
+<suite name="Default suite">
+	<test name="Default Test">
+		<packages>
+			<package name="testcases.*" />
+		</packages>
+	
+	</test>
+
+</suite>
