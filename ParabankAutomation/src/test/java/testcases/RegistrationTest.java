@@ -25,6 +25,7 @@ public class RegistrationTest extends BaseTest {
 	    String exp_msg = "Welcome " + user;
 	    
 	    Assert.assertEquals(act_msg, exp_msg, "Registration Failed!");
+	    System.out.println("--- Registration Test Passed for: ---" + user);
 	  
 	}
 }
