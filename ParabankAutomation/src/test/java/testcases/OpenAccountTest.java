@@ -25,7 +25,6 @@ public class OpenAccountTest extends BaseTest {
 		
 		openAccPage.clickOpenAccount();
 		openAccPage.openNewAccount("SAVINGS");
-//		openAccPage.openNewAccount(accType);
 		
 //		Account Details
 		BaseTest.newAccountId = openAccPage.getNewAccountId();
@@ -37,9 +36,7 @@ public class OpenAccountTest extends BaseTest {
 		// Validation
 		String exp_title = "ParaBank | Open Account";
 		String act_title = driver.getTitle();
-		Assert.assertEquals(act_title, exp_title, "Open Account Page not displayed!");
-		
-		
+		Assert.assertEquals(act_title, exp_title, "Open Account Page not displayed!");		
 	}
 
 }
