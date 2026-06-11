@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-11T15:16:28 IST" name="suite" finished-at="2026-06-11T15:16:47 IST" duration-ms="19167">
+    <groups>
+    </groups>
+    <test started-at="2026-06-11T15:16:28 IST" name="Test" finished-at="2026-06-11T15:16:47 IST" duration-ms="19167">
+      <class name="tests.NinjaTest">
+        <test-method is-config="true" signature="initializedriver()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:28 IST" name="initializedriver" finished-at="2026-06-11T15:16:40 IST" duration-ms="11630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializedriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:40 IST" name="setUp" finished-at="2026-06-11T15:16:40 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:40 IST" name="registerTest" data-provider="getRegisterData" finished-at="2026-06-11T15:16:42 IST" duration-ms="1692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ john@example.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ 123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ pass123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:42 IST" name="tearDown" finished-at="2026-06-11T15:16:42 IST" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializedriver()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:42 IST" name="initializedriver" finished-at="2026-06-11T15:16:44 IST" duration-ms="2412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializedriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:44 IST" name="setUp" finished-at="2026-06-11T15:16:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:44 IST" name="registerTest" data-provider="getRegisterData" finished-at="2026-06-11T15:16:47 IST" duration-ms="2432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ jane@example.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ 654321]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ pass456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:47 IST" name="tearDown" finished-at="2026-06-11T15:16:47 IST" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.NinjaTest -->
+    </test> <!-- Test -->
+  </suite> <!-- suite -->
+</testng-results>
