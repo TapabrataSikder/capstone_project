@@ -45,5 +45,33 @@ public class Parabank_POM {
 		driver.findElement(cnfpass).sendKeys(pwd);
 		driver.findElement(regBtn).click();
 	}
+	
+	// Add this inside Parabank_POM class
+	By logoutLink = By.xpath("//a[text()='Log Out']");
+
+	public void logoutIfVisible() {
+	    try {
+	        WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(3));
+	        shortWait.until(ExpectedConditions.elementToBeClickable(logoutLink)).click();
+	        
+	        // ADD THIS: Force the driver to wait for the page to navigate back
+	        // to the index page after logout
+	        wait.until(ExpectedConditions.urlContains("index.htm"));
+	        System.out.println("Logged out and navigated to home page.");
+	    } catch (Exception e) {
+	        System.out.println("Already on home page or logout not needed.");
+	    }
+	}
+	
+	
+	By usernameField = By.name("username");
+	By passwordField = By.name("password");
+	By loginBtn = By.xpath("//input[@value='Log In']");
+	
+	public void login(String uname, String pwd) {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(usernameField)).sendKeys(uname);
+	    driver.findElement(passwordField).sendKeys(pwd);
+	    driver.findElement(loginBtn).click();
+	}
 
 }
