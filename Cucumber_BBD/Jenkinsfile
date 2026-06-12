@@ -15,23 +15,21 @@ pipeline {
         
         stage('Build & Test') {
             steps {
-                // Remove dir() if your pom.xml is in the root of your repository
-                bat 'mvn clean test -Dheadless=true'
+                dir('Cucumber_BBD') { // Change this to match the folder where pom.xml exists
+            bat 'mvn clean test -Dheadless=true'
+        }
             }
         }
     }
     
     post {
         always {
-            // Publishes the Cucumber HTML report to the Jenkins dashboard
-            publishHTML([
-                allowMissing: false, 
-                alwaysLinkToLastBuild: true, 
-                keepAll: true, 
-                reportDir: 'target/htmlreports', 
-                reportFiles: 'Parabank_report.html', 
-                reportName: 'Cucumber BBD Report'
-            ])
+            publishHtml(target: [
+            reportDir: 'Cucumber_BBD/target/htmlreports', // Ensure path matches where report is generated
+            reportFiles: 'Parabank_report.html',
+            reportName: 'Cucumber BBD Report',
+            alwaysLinkToLastBuild: true
+        ])
         }
     }
 }
