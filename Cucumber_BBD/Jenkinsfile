@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+    
+    tools {
+        maven 'maven3' 
+        jdk 'java' 
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm // This correctly grabs the code from the repo configured in the Job
+            }
+        }
+        
+        stage('Build & Test') {
+            steps {
+                // Remove dir() if your pom.xml is in the root of your repository
+                bat 'mvn clean test -Dheadless=true'
+            }
+        }
+    }
+    
+    post {
+        always {
+            // Publishes the Cucumber HTML report to the Jenkins dashboard
+            publishHTML([
+                allowMissing: false, 
+                alwaysLinkToLastBuild: true, 
+                keepAll: true, 
+                reportDir: 'target/htmlreports', 
+                reportFiles: 'Parabank_report.html', 
+                reportName: 'Cucumber BBD Report'
+            ])
+        }
+    }
+}

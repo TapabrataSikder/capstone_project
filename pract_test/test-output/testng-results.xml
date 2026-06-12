@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-11T15:16:28 IST" name="suite" finished-at="2026-06-11T15:16:47 IST" duration-ms="19167">
+  <suite started-at="2026-06-11T16:21:34 IST" name="suite" finished-at="2026-06-11T16:21:48 IST" duration-ms="13303">
     <groups>
     </groups>
-    <test started-at="2026-06-11T15:16:28 IST" name="Test" finished-at="2026-06-11T15:16:47 IST" duration-ms="19167">
+    <test started-at="2026-06-11T16:21:34 IST" name="Test" finished-at="2026-06-11T16:21:48 IST" duration-ms="13303">
       <class name="tests.NinjaTest">
-        <test-method is-config="true" signature="initializedriver()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:28 IST" name="initializedriver" finished-at="2026-06-11T15:16:40 IST" duration-ms="11630" status="PASS">
+        <test-method is-config="true" signature="initializedriver()[pri:0, instance:tests.NinjaTest@54d9d12d]" started-at="2026-06-11T16:21:34 IST" name="initializedriver" finished-at="2026-06-11T16:21:40 IST" duration-ms="5507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializedriver -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:40 IST" name="setUp" finished-at="2026-06-11T15:16:40 IST" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.NinjaTest@54d9d12d]" started-at="2026-06-11T16:21:40 IST" name="setUp" finished-at="2026-06-11T16:21:40 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:40 IST" name="registerTest" data-provider="getRegisterData" finished-at="2026-06-11T15:16:42 IST" duration-ms="1692" status="PASS">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.NinjaTest@54d9d12d]" started-at="2026-06-11T16:21:40 IST" name="registerTest" data-provider="getRegisterData" finished-at="2026-06-11T16:21:42 IST" duration-ms="2452" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,19 +46,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:42 IST" name="tearDown" finished-at="2026-06-11T15:16:42 IST" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NinjaTest@54d9d12d]" started-at="2026-06-11T16:21:42 IST" name="tearDown" finished-at="2026-06-11T16:21:43 IST" duration-ms="463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializedriver()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:42 IST" name="initializedriver" finished-at="2026-06-11T15:16:44 IST" duration-ms="2412" status="PASS">
+        <test-method is-config="true" signature="initializedriver()[pri:0, instance:tests.NinjaTest@54d9d12d]" started-at="2026-06-11T16:21:43 IST" name="initializedriver" finished-at="2026-06-11T16:21:45 IST" duration-ms="2578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializedriver -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:44 IST" name="setUp" finished-at="2026-06-11T15:16:44 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.NinjaTest@54d9d12d]" started-at="2026-06-11T16:21:45 IST" name="setUp" finished-at="2026-06-11T16:21:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:44 IST" name="registerTest" data-provider="getRegisterData" finished-at="2026-06-11T15:16:47 IST" duration-ms="2432" status="PASS">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.NinjaTest@54d9d12d]" started-at="2026-06-11T16:21:45 IST" name="registerTest" data-provider="getRegisterData" finished-at="2026-06-11T16:21:47 IST" duration-ms="1726" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NinjaTest@3c41ed1d]" started-at="2026-06-11T15:16:47 IST" name="tearDown" finished-at="2026-06-11T15:16:47 IST" duration-ms="457" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NinjaTest@54d9d12d]" started-at="2026-06-11T16:21:47 IST" name="tearDown" finished-at="2026-06-11T16:21:48 IST" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
