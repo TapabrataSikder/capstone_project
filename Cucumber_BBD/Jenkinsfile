@@ -9,27 +9,25 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm // This correctly grabs the code from the repo configured in the Job
+                echo 'Checking out code from GitHub...'
             }
         }
         
         stage('Build & Test') {
             steps {
-                dir('Cucumber_BBD') { // Change this to match the folder where pom.xml exists
-            bat 'mvn clean test -Dheadless=true'
-        }
+                // Navigate into the subdirectory where your pom.xml is located
+                dir('Cucumber_BBD') {
+                    // Running with -Dheadless=true to ensure it works on server environments
+                    bat 'mvn clean test -Dheadless=true'
+                }
             }
         }
     }
     
     post {
         always {
-            publishHtml(target: [
-            reportDir: 'Cucumber_BBD/target/htmlreports', // Ensure path matches where report is generated
-            reportFiles: 'Parabank_report.html',
-            reportName: 'Cucumber BBD Report',
-            alwaysLinkToLastBuild: true
-        ])
+            // Archiving the test reports so you can access them from the Jenkins UI
+            archiveArtifacts artifacts: 'Cucumber_BBD/target/surefire-reports/*.xml, Cucumber_BBD/target/htmlreports/*.html', fingerprint: true
         }
     }
 }
