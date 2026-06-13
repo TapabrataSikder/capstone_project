@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-13T11:45:47 IST" name="ParaBank Suite" finished-at="2026-06-13T11:46:42 IST" duration-ms="55136">
+  <suite started-at="2026-06-13T12:55:36 IST" name="ParaBank Suite" finished-at="2026-06-13T12:56:31 IST" duration-ms="55630">
     <groups>
       <group name="AccountOverviewGroup">
-        <method signature="AccountOverviewTest.testAccountOverviewDetails(java.lang.String,java.lang.String)[pri:0, instance:testcases.AccountOverviewTest@4988d8b8]" name="testAccountOverviewDetails" class="testcases.AccountOverviewTest"/>
+        <method signature="AccountOverviewTest.testAccountOverviewDetails(java.lang.String,java.lang.String)[pri:0, instance:testcases.AccountOverviewTest@bccb269]" name="testAccountOverviewDetails" class="testcases.AccountOverviewTest"/>
       </group> <!-- AccountOverviewGroup -->
       <group name="LoginGroup">
-        <method signature="LoginTest.validLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@2de23121]" name="validLogin" class="testcases.LoginTest"/>
+        <method signature="LoginTest.validLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@6913c1fb]" name="validLogin" class="testcases.LoginTest"/>
       </group> <!-- LoginGroup -->
       <group name="LogoutGroup">
-        <method signature="LogoutTest.testLogout()[pri:0, instance:testcases.LogoutTest@6913c1fb]" name="testLogout" class="testcases.LogoutTest"/>
+        <method signature="LogoutTest.testLogout()[pri:0, instance:testcases.LogoutTest@7d8704ef]" name="testLogout" class="testcases.LogoutTest"/>
       </group> <!-- LogoutGroup -->
       <group name="TransferFundsGroup">
-        <method signature="TransferFundsTest.testTransferFunds(java.lang.String,java.lang.String)[pri:0, instance:testcases.TransferFundsTest@c0c2f8d]" name="testTransferFunds" class="testcases.TransferFundsTest"/>
+        <method signature="TransferFundsTest.testTransferFunds(java.lang.String,java.lang.String)[pri:0, instance:testcases.TransferFundsTest@609cd4d8]" name="testTransferFunds" class="testcases.TransferFundsTest"/>
       </group> <!-- TransferFundsGroup -->
       <group name="OpenAccountGroup">
-        <method signature="OpenAccountTest.testOpenNewAccount(java.lang.String,java.lang.String)[pri:0, instance:testcases.OpenAccountTest@63475ace]" name="testOpenNewAccount" class="testcases.OpenAccountTest"/>
+        <method signature="OpenAccountTest.testOpenNewAccount(java.lang.String,java.lang.String)[pri:0, instance:testcases.OpenAccountTest@66d18979]" name="testOpenNewAccount" class="testcases.OpenAccountTest"/>
       </group> <!-- OpenAccountGroup -->
       <group name="BillPaymentGroup">
-        <method signature="BillPayTest.testBillPayment(java.lang.String,java.lang.String)[pri:0, instance:testcases.BillPayTest@305b7c14]" name="testBillPayment" class="testcases.BillPayTest"/>
+        <method signature="BillPayTest.testBillPayment(java.lang.String,java.lang.String)[pri:0, instance:testcases.BillPayTest@17f7cd29]" name="testBillPayment" class="testcases.BillPayTest"/>
       </group> <!-- BillPaymentGroup -->
     </groups>
-    <test started-at="2026-06-13T11:45:47 IST" name="Regression Tests" finished-at="2026-06-13T11:46:42 IST" duration-ms="55136">
+    <test started-at="2026-06-13T12:55:36 IST" name="Regression Tests" finished-at="2026-06-13T12:56:31 IST" duration-ms="55630">
       <class name="testcases.LogoutTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LogoutTest@6913c1fb]" started-at="2026-06-13T11:46:29 IST" name="setup" finished-at="2026-06-13T11:46:32 IST" duration-ms="2642" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LogoutTest@7d8704ef]" started-at="2026-06-13T12:56:18 IST" name="setup" finished-at="2026-06-13T12:56:21 IST" duration-ms="2583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogout()[pri:0, instance:testcases.LogoutTest@6913c1fb]" started-at="2026-06-13T11:46:32 IST" name="testLogout" depends-on-groups="TransferFundsGroup, BillPaymentGroup" finished-at="2026-06-13T11:46:42 IST" duration-ms="10081" status="PASS">
+        <test-method signature="testLogout()[pri:0, instance:testcases.LogoutTest@7d8704ef]" started-at="2026-06-13T12:56:21 IST" name="testLogout" depends-on-groups="TransferFundsGroup, BillPaymentGroup" finished-at="2026-06-13T12:56:31 IST" duration-ms="10102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LogoutTest@6913c1fb]" started-at="2026-06-13T11:46:42 IST" name="tearDown" finished-at="2026-06-13T11:46:42 IST" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LogoutTest@7d8704ef]" started-at="2026-06-13T12:56:31 IST" name="tearDown" finished-at="2026-06-13T12:56:31 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.LogoutTest -->
       <class name="testcases.TransferFundsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TransferFundsTest@c0c2f8d]" started-at="2026-06-13T11:46:14 IST" name="setup" finished-at="2026-06-13T11:46:16 IST" duration-ms="2528" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TransferFundsTest@609cd4d8]" started-at="2026-06-13T12:56:03 IST" name="setup" finished-at="2026-06-13T12:56:05 IST" duration-ms="2610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testTransferFunds(java.lang.String,java.lang.String)[pri:0, instance:testcases.TransferFundsTest@c0c2f8d]" started-at="2026-06-13T11:46:16 IST" name="testTransferFunds" data-provider="transferData" depends-on-groups="AccountOverviewGroup" finished-at="2026-06-13T11:46:21 IST" duration-ms="4429" status="PASS">
+        <test-method signature="testTransferFunds(java.lang.String,java.lang.String)[pri:0, instance:testcases.TransferFundsTest@609cd4d8]" started-at="2026-06-13T12:56:05 IST" name="testTransferFunds" data-provider="transferData" depends-on-groups="AccountOverviewGroup" finished-at="2026-06-13T12:56:10 IST" duration-ms="4168" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,17 +59,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransferFunds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TransferFundsTest@c0c2f8d]" started-at="2026-06-13T11:46:21 IST" name="tearDown" finished-at="2026-06-13T11:46:21 IST" duration-ms="256" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TransferFundsTest@609cd4d8]" started-at="2026-06-13T12:56:10 IST" name="tearDown" finished-at="2026-06-13T12:56:10 IST" duration-ms="351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TransferFundsTest -->
       <class name="testcases.AccountOverviewTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AccountOverviewTest@4988d8b8]" started-at="2026-06-13T11:46:09 IST" name="setup" finished-at="2026-06-13T11:46:12 IST" duration-ms="2497" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AccountOverviewTest@bccb269]" started-at="2026-06-13T12:55:58 IST" name="setup" finished-at="2026-06-13T12:56:01 IST" duration-ms="2505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testAccountOverviewDetails(java.lang.String,java.lang.String)[pri:0, instance:testcases.AccountOverviewTest@4988d8b8]" started-at="2026-06-13T11:46:12 IST" name="testAccountOverviewDetails" data-provider="loginData" depends-on-groups="LoginGroup" finished-at="2026-06-13T11:46:13 IST" duration-ms="1744" status="PASS">
+        <test-method signature="testAccountOverviewDetails(java.lang.String,java.lang.String)[pri:0, instance:testcases.AccountOverviewTest@bccb269]" started-at="2026-06-13T12:56:01 IST" name="testAccountOverviewDetails" data-provider="loginData" depends-on-groups="LoginGroup" finished-at="2026-06-13T12:56:03 IST" duration-ms="1709" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,17 +85,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAccountOverviewDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AccountOverviewTest@4988d8b8]" started-at="2026-06-13T11:46:13 IST" name="tearDown" finished-at="2026-06-13T11:46:14 IST" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AccountOverviewTest@bccb269]" started-at="2026-06-13T12:56:03 IST" name="tearDown" finished-at="2026-06-13T12:56:03 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.AccountOverviewTest -->
-      <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@2de23121]" started-at="2026-06-13T11:45:58 IST" name="setup" finished-at="2026-06-13T11:46:01 IST" duration-ms="2661" status="PASS">
+      <class name="testcases.NegativeLoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.NegativeLoginTest@13b6aecc]" started-at="2026-06-13T12:55:49 IST" name="setup" finished-at="2026-06-13T12:55:51 IST" duration-ms="2475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@2de23121]" started-at="2026-06-13T11:46:01 IST" name="validLogin" data-provider="loginData" finished-at="2026-06-13T11:46:03 IST" duration-ms="1903" status="PASS">
+        <test-method signature="testNegativeLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.NegativeLoginTest@13b6aecc]" started-at="2026-06-13T12:55:51 IST" name="testNegativeLogin" data-provider="invalidLoginData" finished-at="2026-06-13T12:55:52 IST" duration-ms="1042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invaliduser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalidpass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.NegativeLoginTest@13b6aecc]" started-at="2026-06-13T12:55:52 IST" name="tearDown" finished-at="2026-06-13T12:55:53 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.NegativeLoginTest -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@6913c1fb]" started-at="2026-06-13T12:55:45 IST" name="setup" finished-at="2026-06-13T12:55:47 IST" duration-ms="2441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@6913c1fb]" started-at="2026-06-13T12:55:47 IST" name="validLogin" data-provider="loginData" finished-at="2026-06-13T12:55:49 IST" duration-ms="1217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,17 +137,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@2de23121]" started-at="2026-06-13T11:46:03 IST" name="tearDown" finished-at="2026-06-13T11:46:03 IST" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@6913c1fb]" started-at="2026-06-13T12:55:49 IST" name="tearDown" finished-at="2026-06-13T12:55:49 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.LoginTest -->
       <class name="testcases.OpenAccountTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.OpenAccountTest@63475ace]" started-at="2026-06-13T11:46:03 IST" name="setup" finished-at="2026-06-13T11:46:06 IST" duration-ms="2599" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.OpenAccountTest@66d18979]" started-at="2026-06-13T12:55:53 IST" name="setup" finished-at="2026-06-13T12:55:55 IST" duration-ms="2504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testOpenNewAccount(java.lang.String,java.lang.String)[pri:0, instance:testcases.OpenAccountTest@63475ace]" started-at="2026-06-13T11:46:06 IST" name="testOpenNewAccount" data-provider="loginData" depends-on-groups="LoginGroup" finished-at="2026-06-13T11:46:09 IST" duration-ms="2883" status="PASS">
+        <test-method signature="testOpenNewAccount(java.lang.String,java.lang.String)[pri:0, instance:testcases.OpenAccountTest@66d18979]" started-at="2026-06-13T12:55:55 IST" name="testOpenNewAccount" data-provider="loginData" depends-on-groups="LoginGroup" finished-at="2026-06-13T12:55:58 IST" duration-ms="2792" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -137,17 +163,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenNewAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.OpenAccountTest@63475ace]" started-at="2026-06-13T11:46:09 IST" name="tearDown" finished-at="2026-06-13T11:46:09 IST" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.OpenAccountTest@66d18979]" started-at="2026-06-13T12:55:58 IST" name="tearDown" finished-at="2026-06-13T12:55:58 IST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.OpenAccountTest -->
       <class name="testcases.BillPayTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BillPayTest@305b7c14]" started-at="2026-06-13T11:46:21 IST" name="setup" finished-at="2026-06-13T11:46:23 IST" duration-ms="2475" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BillPayTest@17f7cd29]" started-at="2026-06-13T12:56:10 IST" name="setup" finished-at="2026-06-13T12:56:13 IST" duration-ms="2626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testBillPayment(java.lang.String,java.lang.String)[pri:0, instance:testcases.BillPayTest@305b7c14]" started-at="2026-06-13T11:46:23 IST" name="testBillPayment" data-provider="loginData" depends-on-groups="AccountOverviewGroup" finished-at="2026-06-13T11:46:29 IST" duration-ms="5675" status="PASS">
+        <test-method signature="testBillPayment(java.lang.String,java.lang.String)[pri:0, instance:testcases.BillPayTest@17f7cd29]" started-at="2026-06-13T12:56:13 IST" name="testBillPayment" data-provider="loginData" depends-on-groups="AccountOverviewGroup" finished-at="2026-06-13T12:56:18 IST" duration-ms="5281" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,17 +189,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBillPayment -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BillPayTest@305b7c14]" started-at="2026-06-13T11:46:29 IST" name="tearDown" finished-at="2026-06-13T11:46:29 IST" duration-ms="311" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BillPayTest@17f7cd29]" started-at="2026-06-13T12:56:18 IST" name="tearDown" finished-at="2026-06-13T12:56:18 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.BillPayTest -->
       <class name="testcases.RegistrationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.RegistrationTest@49438269]" started-at="2026-06-13T11:45:48 IST" name="setup" finished-at="2026-06-13T11:45:55 IST" duration-ms="6122" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.RegistrationTest@1ce24091]" started-at="2026-06-13T12:55:37 IST" name="setup" finished-at="2026-06-13T12:55:41 IST" duration-ms="4232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@49438269]" started-at="2026-06-13T11:45:55 IST" name="testRegistration" data-provider="regData" finished-at="2026-06-13T11:45:58 IST" duration-ms="3554" status="PASS">
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@1ce24091]" started-at="2026-06-13T12:55:41 IST" name="testRegistration" data-provider="regData" finished-at="2026-06-13T12:55:44 IST" duration-ms="3204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,7 +260,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@49438269]" started-at="2026-06-13T11:45:58 IST" name="tearDown" finished-at="2026-06-13T11:45:58 IST" duration-ms="308" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@1ce24091]" started-at="2026-06-13T12:55:44 IST" name="tearDown" finished-at="2026-06-13T12:55:45 IST" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

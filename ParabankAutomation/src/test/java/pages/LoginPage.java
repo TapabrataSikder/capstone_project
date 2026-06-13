@@ -31,5 +31,9 @@ public class LoginPage {
 		driver.findElement(submit).click();
 
 	}
+	
+	public boolean isLoginErrorDisplayed() {
+	    return driver.findElements(By.className("error")).size() > 0;
+	}
 
 }

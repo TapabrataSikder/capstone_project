@@ -8,6 +8,7 @@
     		<class name="testcases.TransferFundsTest"/>
     		<class name="testcases.BillPayTest"/>
     		<class name="testcases.LogoutTest"/>
+    		<class name="testcases.NegativeLoginTest"/>
         </classes>
     </test>
 </suite>
