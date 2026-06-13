@@ -28,6 +28,7 @@ public class OpenAccountPage {
 	public void openNewAccount(String accountType) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(accountTypeSelect)).sendKeys(accountType);
 		
+		// handling HTML <select> dropdown
 		Select fromDropdown = new Select(driver.findElement(accountTypeSelect));
 		fromDropdown.selectByVisibleText(accountType);
 		

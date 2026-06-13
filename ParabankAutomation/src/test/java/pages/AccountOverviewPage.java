@@ -18,7 +18,7 @@ public class AccountOverviewPage {
         this.wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
     }
 
-    public String getAccountId(int index) {
+    public String getAccountId(int index) { // index-row value for any no.of accounts
     	By accountId = By.xpath("//table[@id='accountTable']//tr[" + index + "]/td[1]/a");
         return wait.until(ExpectedConditions.visibilityOfElementLocated(accountId)).getText();
     }

@@ -16,8 +16,11 @@ public class LoginPage {
 	By pass = By.name("password");
 	By submit = By.xpath("//input[@value='Log In']");
 	
+	
+	// Constructor 
 	public LoginPage(WebDriver driver) {
-		this.driver=driver;
+		this.driver=driver; // current class member variable 
+		// as soon as the LoginPage object created, wait is ready to be used
 		this.wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 

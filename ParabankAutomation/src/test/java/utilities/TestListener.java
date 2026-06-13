@@ -6,9 +6,11 @@ import org.testng.ITestResult;
 
 import base.BaseTest;
 
+
+// TestListener observer the flow of the tests and tell SSUtil to take ss
 public class TestListener extends BaseTest implements ITestListener{
 	
-	@Override
+	@Override  // annotation to override the default behaviour of onTestFailure defined by ITestListener
 	public void onTestFailure(ITestResult result) {        
         try {
             ScreenshotUtil.takeScreenshot(BaseTest.getDriver(), result.getName());

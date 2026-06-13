@@ -15,7 +15,7 @@ import utilities.ConfigReader;
 
 @Listeners(utilities.TestListener.class)
 public class BaseTest {
-	public static WebDriver driver;
+	public static WebDriver driver;  // to ensure that all test classes share same browser and prevent multiple browser launch
 	public static String capturedAccountId;
 	public static String newAccountId;
 	
