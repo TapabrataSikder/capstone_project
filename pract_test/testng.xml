@@ -1,0 +1,9 @@
+<suite name="suite">
+	<test name="Test">
+		<classes>
+            <class name="tests.NinjaTest" />
+        </classes>
+	
+	</test>
+
+</suite>

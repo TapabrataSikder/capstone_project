@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+    
+    tools {
+        maven 'maven3' 
+        jdk 'java' 
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checking out code from GitHub...'
+            }
+        }
+        
+        stage('Build & Test') {
+            steps {
+                // Navigate into the subdirectory where your pom.xml is located
+                dir('Cucumber_BBD') {
+                    // Running with -Dheadless=true to ensure it works on server environments
+                    bat 'mvn clean test -Dheadless=true'
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            // Archiving the test reports so you can access them from the Jenkins UI
+            archiveArtifacts artifacts: 'Cucumber_BBD/target/surefire-reports/*.xml, Cucumber_BBD/target/htmlreports/*.html', fingerprint: true
+        }
+    }
+}
